@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+  }
+  h1 {
+    color: black;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .form-control {
+    border-color: gold;
+  }
+  .btn {
+    background-color: gold;
+    color: white;
+  }
+  #btn-submit {
+    color: black;
+    border-color: black;
+  }
+  .navbar {
+    background-color: rgb(189, 182, 142);
+    border-color: black;
+  }
+  .navbar-brand,
+  .navbar-nav a {
+    color: rgb(0, 0, 0);
+  }
