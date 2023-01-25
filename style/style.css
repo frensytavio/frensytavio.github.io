@@ -1,27 +1,32 @@
 body {
-    background-color: white;
-  }
-  h1 {
-    color: black;
-    font-weight: bold;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .form-control {
-    border-color: gold;
-  }
-  .btn {
-    background-color: gold;
-    color: white;
-  }
-  #btn-submit {
-    color: black;
-    border-color: black;
-  }
-  .navbar {
-    background-color: rgb(189, 182, 142);
-    border-color: black;
-  }
-  .navbar-brand,
-  .navbar-nav a {
-    color: rgb(0, 0, 0);
-  }
+  background-color: white;
+}
+
+h1 {
+  font-size: 55px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+}
+
+.form-control {
+  border-color: gold;
+}
+
+.btn {
+  background-color: gold;
+  color: white;
+}
+
+#btn-submit {
+  color: black;
+  border-color: black;
+}
+
