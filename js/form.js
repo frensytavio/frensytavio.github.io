@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     if (isFormOk) {
       $.post(
-        'https://script.google.com/macros/s/AKfycbyahgFSl9_6Eh85Yn59I1uZmXW6A0few97KwCuW4ZBuCRemI7C4TXA1L5PNTcrgek7vtw/exec',
+        'https://script.google.com/macros/s/AKfycbz-hhFVl9d35zeeMBQCmkaa9ewWLPWuT2UZVR3orvJH7Uk_L2fCs_KcpqA_bImB-DZTKQ/exec',
         {
           nome: input_nome.val(),
           cognome: input_cognome.val()
@@ -23,7 +23,9 @@ $(document).ready(function () {
       ).done(function (response) {
         console.log(response)
         if (response["result"] == 'success') {
-          $('h2#form-title').text('Grazie!')
+          $('h2#form-title').text('Grazie ' + input_nome.val() +",")
+          $('h2#form-title').append('<br><h2>Ti Aspettiamo!</h2>')
+
           $('form').hide()
         } else {
           $('h2#form-title').text('Errore, riprova più tardi!')
