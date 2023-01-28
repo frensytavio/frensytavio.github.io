@@ -23,87 +23,93 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "js/particles.json");
+    </script>
     <script src="js/form.js"></script>
-    <script src="js/count_down.js"></script>
 
     <title>Matrimonio Frensy & Tavio</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row text-center">
-        <h1>Matrimonio Frensy & Tavio</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-2 col-sm-12 text-center">
-          <h2>Quando?</h2>
-          <h3 class="subtitle">Sabato 12/08/2023</h3>
-          <div class="row text-center">
-            <div class="col-md-3 col-sm-3">
-              <img src="assets/imgs/church.png" height="70px" width="70px" />
-            </div>
-            <div class="col-md-9 col-sm-9"></div>
-            <h4>16:30</h4>
-          </div>
-          <div class="row text-center">
-            <div class="col-md-3">
-              <img src="assets/imgs/cheers.png" height="70px" width="70px" />
-            </div>
-            <div class="col-md-9"></div>
-            <h4>18:00</h4>
-          </div>
+      <div id="particles-js"></div>
+      <div id="overlay">
+        <div class="row text-center">
+          <h1>Matrimonio Frensy & Tavio</h1>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2 col-sm-12">
-          <h2 id="form-title" class="text-center">
-            Confermaci la tua presenza!
-          </h2>
-          <form action="/" method="POST">
-            <div class="form-group">
-              <label for="Nome">Nome:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="nome"
-                placeholder=""
-              />
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2>Quando?</h2>
+            <h3 class="subtitle">Sabato 12/08/2023</h3>
+            <div class="row text-center">
+              <div class="col-md-3 col-sm-3">
+                <img src="assets/imgs/church.png" height="70px" width="70px" />
+              </div>
+              <div class="col-md-9 col-sm-9"></div>
+              <h4>16:30</h4>
             </div>
-            <div class="form-group">
-              <label for="Nome">Cognome:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="cognome"
-                name="cognome"
-                placeholder=""
-              />
+            <div class="row text-center">
+              <div class="col-md-3">
+                <img src="assets/imgs/cheers.png" height="70px" width="70px" />
+              </div>
+              <div class="col-md-9"></div>
+              <h4>18:00</h4>
             </div>
-            <button
-              type="submit"
-              value="submit"
-              id="btn-submit"
-              class="btn btn-default"
-              name="invia"
-            >
-              Invia
-            </button>
-          </form>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2 col-sm-12 text-center">
-          <h2>Dove?</h2>
-          <h3 class="subtitle">Tenuta La Lepre</h3>
-          <div>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.4550476983354!2d12.441267915510107!3d44.03265467911015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc155d1a12615%3A0x349cba54279ee19d!2sTenuta%20La%20Lepre%20Location%20per%20Eventi!5e0!3m2!1sit!2sit!4v1674682109871!5m2!1sit!2sit"
-            width=300" height="300" style="border: 0" allowfullscreen=""
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
           </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2 col-sm-12">
+            <h2 id="form-title" class="text-center">
+              Confermaci la tua presenza!
+            </h2>
+            <form action="/" method="POST">
+              <div class="form-group">
+                <label for="Nome">Nome:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="nome"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="Nome">Cognome:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cognome"
+                  name="cognome"
+                  placeholder=""
+                />
+              </div>
+              <button
+                type="submit"
+                value="submit"
+                id="btn-submit"
+                class="btn btn-default"
+                name="invia"
+              >
+                Invia
+              </button>
+            </form>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2>Dove?</h2>
+            <h3 class="subtitle">Tenuta La Lepre</h3>
+            <div>
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.4550476983354!2d12.441267915510107!3d44.03265467911015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc155d1a12615%3A0x349cba54279ee19d!2sTenuta%20La%20Lepre%20Location%20per%20Eventi!5e0!3m2!1sit!2sit!4v1674682109871!5m2!1sit!2sit"
+              width=300" height="300" style="border: 0" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+            </div>
+          </div>
+          <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
   </body>
