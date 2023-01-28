@@ -3,16 +3,22 @@ $(document).ready(function () {
     e.preventDefault()
     let isFormOk = true
     const input_nome = $('input#name')
+    const input_cognome = $('input#cognome')
 
     if (!input_nome.val().length > 0) {
       isFormOk = false
     }
 
+    if (!input_cognome.val().length > 0) {
+      isFormOk = false
+    }
+
     if (isFormOk) {
       $.post(
-        'https://script.google.com/macros/s/AKfycbzLghIJn2SOjsB-xE0a1mvNFR779Y7xUFJzn6dj9p6YzgL8iprRDXV6L3xeWhtRLkqhEw/exec',
+        'https://script.google.com/macros/s/AKfycbyahgFSl9_6Eh85Yn59I1uZmXW6A0few97KwCuW4ZBuCRemI7C4TXA1L5PNTcrgek7vtw/exec',
         {
-          nome: input_nome.val()
+          nome: input_nome.val(),
+          cognome: input_cognome.val()
         }
       ).done(function (response) {
         console.log(response)
