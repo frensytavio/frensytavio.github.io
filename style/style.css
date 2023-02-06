@@ -21,6 +21,21 @@ h2 {
   border-bottom: 1px solid black;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
 h2#form-title {
   color: black;
 }
@@ -66,11 +81,6 @@ input {
   background-repeat: no-repeat;
 }
 
-.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-
 #clock {
   display: block;
   margin: 0 auto;
@@ -92,7 +102,7 @@ input {
   font-weight: bold;
 }
 
-.clock-label{
+.clock-label {
   color: white;
   font-weight: bold;
   text-align: center;
@@ -106,6 +116,11 @@ table {
   border-left-style: none;
   border-right-style: none;
   border-bottom-style: none;
+}
+
+.nopadding{
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */

@@ -28,29 +28,30 @@
       particlesJS.load("particles-js", "js/particles_gold_bg.json");
     </script>
     <script src="js/form.js"></script>
+    <script src="js/scrolling.js"></script>
     <title>Matrimonio Frensy & Tavio</title>
     <link rel="icon" type="image/x-icon" href="/assets/imgs/champagne.png" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div id="bg-raw" class="row text-center nopadding">
-        <h1>Matrimonio Frensy & Tavio</h1>
-      </div>
-      <div id="particles-js"></div>
-      <div id="overlay">
-        <div class="row">
+    <div class="container-fluid nopadding">
+        <div id="bg-raw" class="row text-center nopadding">
+          <h1>Matrimonio Frensy & Tavio</h1>
+        </div>
+        <div id="particles-js"></div>
+        <div id="overlay">
+        <div class="row nopadding">
           <div class="col-md-1"></div>
           <div class="col-md-2 col-sm-12 text-center">
             <h2>Quando?</h2>
             <h3 class="subtitle">Sabato 12/08/2023</h3>
-            <div class="row text-center">
+            <div class="row text-center nopadding">
               <div class="col-md-3 col-sm-3">
                 <img src="assets/imgs/church.png" height="70px" width="70px" />
               </div>
               <div class="col-md-9 col-sm-9"></div>
               <h4>16:30</h4>
             </div>
-            <div class="row text-center">
+            <div class="row nopadding text-center">
               <div class="col-md-3">
                 <img src="assets/imgs/cheers.png" height="70px" width="70px" />
               </div>
@@ -115,16 +116,24 @@
           </div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row">
+        <div class="row nopadding">
           <div class="col-md-4"></div>
           <div class="clock col-md-4 col-sm-12 text-center" id="clock">
             <table class="text-center">
               <thead>
                 <tr>
-                  <th scope="col"><div id="clock-days" data-value="days"></div></td>
-                  <th scope="col"><div id="clock-hours" data-value="hours"></div></td>
-                  <th scope="col"><div id="clock-minutes" data-value="minutes"></div></td>
-                  <th scope="col"><div id="clock-seconds" data-value="seconds"></div></td>
+                  <th scope="col">
+                    <div id="clock-days" data-value="days"></div>
+                  </th>
+                  <th scope="col">
+                    <div id="clock-hours" data-value="hours"></div>
+                  </th>
+                  <th scope="col">
+                    <div id="clock-minutes" data-value="minutes"></div>
+                  </th>
+                  <th scope="col">
+                    <div id="clock-seconds" data-value="seconds"></div>
+                  </th>
                 </tr>
               </thead>
               <tr>
