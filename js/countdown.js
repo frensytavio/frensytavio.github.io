@@ -1,18 +1,16 @@
-// class to create a countdown timer
 class CountdownTimer {
     // setup timer values
-    constructor({ selector, targetDate, backgroundColor = null, foregroundColor = null }) {
-        this.selector = selector;
+    constructor({ targetDate, backgroundColor = null, foregroundColor = null }) {
         this.targetDate = targetDate;
         this.backgroundColor = backgroundColor;
         this.foregroundColor = foregroundColor;
 
         // grab divs on frontend using supplied selector ID
         this.refs = {
-            days: document.querySelector(`${this.selector} [data-value="days"]`),
-            hours: document.querySelector(`${this.selector} [data-value="hours"]`),
-            mins: document.querySelector(`${this.selector} [data-value="minutes"]`),
-            secs: document.querySelector(`${this.selector} [data-value="seconds"]`),
+            days: document.getElementById("clock-days"),
+            hours: document.getElementById("clock-hours"),
+            mins: document.getElementById("clock-minutes"),
+            secs: document.getElementById("clock-seconds"),
         };
     }
 
@@ -38,26 +36,9 @@ class CountdownTimer {
         this.refs.secs.textContent = secs;
     }
 
-    updateColors() {
-        if (this.backgroundColor != null) {
-            this.refs.days.style.background = this.backgroundColor;
-            this.refs.hours.style.background = this.backgroundColor;
-            this.refs.mins.style.background = this.backgroundColor;
-            this.refs.secs.style.background = this.backgroundColor;
-        }
-
-        if (this.foregroundColor != null) {
-            this.refs.days.style.color = this.foregroundColor;
-            this.refs.hours.style.color = this.foregroundColor;
-            this.refs.mins.style.color = this.foregroundColor;
-            this.refs.secs.style.color = this.foregroundColor;
-        }
-    }
-
     startTimer() {
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
-        this.updateColors();
         setInterval(() => {
             const timer = this.getTimeRemaining(this.targetDate);
             this.updateTimer(timer);
@@ -66,8 +47,7 @@ class CountdownTimer {
 }
 
 const timer = new CountdownTimer({
-    selector: "clock#1",
-    targetDate: new Date("August, 12 2023 16:30:00")
+    targetDate: new Date("August, 12 2023 00:00:00")
 });
 
 timer.startTimer();

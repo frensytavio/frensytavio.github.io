@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: goldenrod;
+  color: black;
   font-weight: bold;
   font-family: 'Caveat', cursive;
   position: relative;
@@ -11,9 +11,18 @@ h1 {
 
 h2 {
   font-size: 40px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: 'Caveat', cursive;
+}
+
+#bg-raw {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+h2#form-title {
+  color: black;
 }
 
 .form-control {
@@ -21,35 +30,84 @@ h2 {
 }
 
 .btn {
-  background-color: goldenrod;
+  background-color: rgb(255, 255, 255);
   color: white;
 }
 
 #btn-submit {
   color: black;
+  font-weight: bold;
   border-color: black;
 }
 
 h3.subtitle {
   font-size: 40px;
   font-family: 'Caveat', cursive;
+  color: black;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  color: black;
 }
 
 input {
   max-width: 300px;
+  text-align: center;
 }
 
-#particles-js{
+#particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #dbaa2e;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
 
+#clock {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+#clock-days,
+#clock-hours,
+#clock-minutes,
+#clock-seconds {
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 2.5rem;
+  width: calc(10% - 2rem);
+  font-weight: bold;
+}
+
+.clock-label{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
@@ -61,6 +119,6 @@ input {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }

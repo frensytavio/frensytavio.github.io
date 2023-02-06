@@ -29,7 +29,7 @@
       "value": 1,
       "random": false,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
         "opacity_min": 0.1,
         "sync": false
@@ -46,14 +46,14 @@
       }
     },
     "line_linked": {
-      "enable": false,
+      "enable": true,
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0,
       "width": 0
     },
     "move": {
-      "enable": false,
+      "enable": true,
       "speed": 6,
       "direction": "none",
       "random": false,
