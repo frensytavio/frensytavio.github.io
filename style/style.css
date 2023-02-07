@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+  font-size: 55px;
   color: black;
   font-weight: bold;
   font-family: 'Caveat', cursive;
@@ -27,12 +28,20 @@ h2 {
   width: 100%;
 }
 
+.first-icon {
+  margin-top: 30px;
+}
+
+.second-icon {
+  margin-top: 30px;
+}
+
 .content {
   padding: 16px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
   padding-top: 102px;
 }
 
@@ -59,6 +68,7 @@ h3.subtitle {
   font-size: 40px;
   font-family: 'Caveat', cursive;
   color: black;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -68,7 +78,9 @@ h4 {
 }
 
 input {
+  margin: 0 auto;
   max-width: 300px;
+  border: 5px solid black;
 }
 
 #particles-js {
@@ -81,50 +93,71 @@ input {
   background-repeat: no-repeat;
 }
 
+
 #clock {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 100%;
   text-align: center;
+}
+
+.clock {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  background-color: #e2ce9a80;
 }
 
 #clock-days,
 #clock-hours,
 #clock-minutes,
 #clock-seconds {
-  text-align: center;
-  color: #fff;
   display: inline-block;
-  padding: 1rem;
-  margin: 0 1rem;
-  font-size: 2.5rem;
-  width: calc(10% - 2rem);
-  font-weight: bold;
-}
-
-.clock-label {
-  color: white;
-  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #000000;
+  border-radius: 50%;
   text-align: center;
-  font-size: 2rem;
+  margin: 10px;
 }
 
-table {
-  text-align: center;
-  margin: 0 auto;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
+#clock-days {
+  background-color: #ffc107;
 }
 
-.nopadding{
+#clock-hours {
+  background-color: #17a2b8;
+}
+
+#clock-minutes {
+  background-color: #28a745;
+}
+
+#clock-seconds {
+  background-color: #dc3545;
+}
+
+.nopadding {
   padding: 0 !important;
   margin: 0 !important;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 901px) {
   h1 {
     font-size: 55px;
   }
@@ -135,4 +168,100 @@ table {
   h1 {
     font-size: 35px;
   }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3.subtitle {
+    font-size: 25px;
+  }
+
+  .clock {
+    font-size: 15px;
+  }
+
+  #clock {
+    max-width: 80%;
+  }
+
+
+  table {
+    margin-top: 50px;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  #clock-days,
+  #clock-hours,
+  #clock-minutes,
+  #clock-seconds {
+    margin: 0px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  input {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  iframe {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  img {
+    max-width: 30%;
+    max-height: 30%;
+  }
+}
+
+/*
+IPAD
+*/
+@media screen and (max-width: 900px) and (min-width:601px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3.subtitle {
+    font-size: 25px;
+  }
+
+  .clock {
+    font-size: 15px;
+  }
+
+  #clock {
+    max-width: 80%;
+  }
+
+  input {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  iframe {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  img {
+    max-width: 30%;
+    max-height: 30%;
+  }
+
 }
