@@ -12,20 +12,28 @@ h1 {
 
 h2 {
   font-size: 40px;
-  color: white;
   font-weight: bold;
   font-family: 'Caveat', cursive;
 }
 
+h2.white-subtitle {
+  color: white;
+
+}
+
 #bg-raw {
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.first-row {
+  margin-top:30px;
 }
 
 .first-icon {
@@ -69,6 +77,8 @@ h3.subtitle {
   font-family: 'Caveat', cursive;
   color: black;
   margin-bottom: 20px;
+  text-decoration: underline;
+
 }
 
 h4 {
@@ -77,10 +87,10 @@ h4 {
   color: black;
 }
 
-input {
+input[type=text] {
   margin: 0 auto;
   max-width: 300px;
-  border: 5px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #particles-js {
@@ -117,7 +127,7 @@ td {
   padding: 10px;
 }
 
-th {
+th, td {
   background-color: #e2ce9a80;
 }
 
@@ -130,13 +140,14 @@ th {
   height: 60px;
   line-height: 60px;
   border: 1px solid #000000;
-  border-radius: 50%;
+  border-radius: 100%;
   text-align: center;
   margin: 10px;
+  margin-bottom: 0;
 }
 
 #clock-days {
-  background-color: #ffc107;
+  background-color: #ffd000af;
 }
 
 #clock-hours {
@@ -203,7 +214,7 @@ th {
 
   input {
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 200px;
   }
 
   form {
@@ -247,7 +258,7 @@ IPAD
 
   input {
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 200px;
   }
 
   form {
