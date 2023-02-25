@@ -122,19 +122,17 @@ table {
   margin: 0 auto;
 }
 
-th,
-td {
-  padding: 10px;
-}
-
 th, td {
-  background-color: #e2ce9a80;
-}
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  color: black;
+  background-color: hsla(0, 0%, 100%, 0.253);
 
 #clock-days,
 #clock-hours,
 #clock-minutes,
 #clock-seconds {
+  color: black;
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -147,19 +145,19 @@ th, td {
 }
 
 #clock-days {
-  background-color: #ffd000af;
+  background-color: #fff;
 }
 
 #clock-hours {
-  background-color: #17a2b8;
+  background-color: #fff;
 }
 
 #clock-minutes {
-  background-color: #28a745;
+  background-color: #fff;
 }
 
 #clock-seconds {
-  background-color: #dc3545;
+  background-color: #fff;
 }
 
 .nopadding {
