@@ -122,13 +122,11 @@ table {
   margin: 0 auto;
 }
 
-
 th, td {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 5px;
   color: black;
   background-color: hsla(0, 0%, 100%, 0.253);
-}
 
 #clock-days,
 #clock-hours,
@@ -139,7 +137,7 @@ th, td {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  border: 1px solid #dbaa2e;
+  border: 1px solid #000000;
   border-radius: 100%;
   text-align: center;
   margin: 10px;
