@@ -91,6 +91,7 @@ input[type=text] {
   margin: 0 auto;
   max-width: 300px;
   border: 1px solid rgb(0, 0, 0);
+  color: black;
 }
 
 #particles-js {
@@ -167,6 +168,11 @@ th, td {
   margin: 0 !important;
 }
 
+div.avatars {
+  margin-top: 30px;
+
+}
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 901px) {
   h1 {
@@ -212,11 +218,6 @@ th, td {
     display: inline-block;
   }
 
-  input {
-    margin: 0 auto;
-    max-width: 200px;
-  }
-
   form {
     text-align: center;
   }
@@ -254,11 +255,6 @@ IPAD
 
   #clock {
     max-width: 80%;
-  }
-
-  input {
-    margin: 0 auto;
-    max-width: 200px;
   }
 
   form {
