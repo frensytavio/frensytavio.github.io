@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     if (isFormOk) {
       $.post(
-        'https://script.google.com/macros/s/AKfycbxY9vYc3XyUugg2PEH2v3a8gGsYPMaLuUU01meDysX9pBJbMSXyCOx0PTiEE0w223o1rw/exec',
+        'https://script.google.com/macros/s/AKfycbzmcBqKTNRtVTIeACQjrp7Ax5UliRD7bF6kgW8oh5H9auzjsP8OcbATRJGewvWimiYV/exec',
         {
           nome: input_nome.val(),
           cognome: input_cognome.val()
